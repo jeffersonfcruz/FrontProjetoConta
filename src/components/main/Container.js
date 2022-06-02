@@ -10,7 +10,6 @@ import {path} from "../../config/path";
 export default function Container() {
     
     const [datacards , setDataCards ] = useState([]);
-    
     useEffect(()=>{
         fetch(`${path}/wallet/list/user/62964f81f3c9afc72b8eaba4`,{
             method:"GET",
@@ -37,7 +36,7 @@ const changeData = (content) => {
     return (
         <div className="container">
             <Cards data={datacards} action={changeData}/>
-            <Panel/>
+            <Panel data={balance}/>
             <Waitlist/>
             <Plans/>
             <Balance data={balance}/>

@@ -36,24 +36,25 @@
 .cards {
     width: 20vw;
     height: 60vh;
-    border: 1px solid silver;
+    border: 0px solid silver;
 }
 .panel {
     width: 60vw;
     height: 60vh;
-    border: 1px solid silver;
+    border: 0px solid silver;
     background-size: 100% cover;
 }
 .waitlist, .plans, .balance {
     width: 20vw;
-    height: 50vh;
+    height: 60vh;
     margin: 30px;
-    border: 1px solid silver;
+    border: 0px solid silver;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px 5px #eee;
+    box-shadow: 0px 0px 2px 2px #eee;
     margin-top: -50px;
     background-color: white;
     padding: 50px;
+    text-align: center;
 }
 .balance p {
     margin: 10px;
@@ -76,4 +77,96 @@
 }
 .cards img:hover {
     margin-left: 30px;
+}
+.plans h2{
+    margin: 10px;
+    color: silver;
+}
+.plans h3{
+    margin: 30px;
+    font-size: 12pt;
+    color: silver;
+}
+.plans a {
+    padding: 20px;
+    background-color: #feb101;
+    color: #fff;
+    border-radius: 5pt;
+    margin-top: 50px;
+    display: block;
+    text-decoration: none;
+}
+.waitlist div{
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-top: -100px;
+    box-shadow: 0px 0px 3px silver;
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 34%;
+}
+.waitlist div img{
+    width: 70%;
+    height: auto;
+}
+.waitlist input {
+    padding: 10px;
+    background-color: #f2f2e9;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 0px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+.waitlist a{
+    padding: 10px;
+    font-size: 10pt;
+    background-color: #fa3f6c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 40px;
+}
+::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 12pt;
+    padding-left: 15px;
+}
+.waitlist p{
+    display: flex;
+    flex-direction: row;
+    margin: 21px;
+    font-size: 10pt;
+}
+.linha {
+    position: relative;
+    width: 250px;
+    top: 100px;
+    left: -13px;
+}
+.login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+}
+.login input{
+    margin: 10px;
+    padding: 10px;
+}
+.login button{
+    padding: 10px;
+    margin: 10px;
 }

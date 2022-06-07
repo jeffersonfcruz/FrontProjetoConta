@@ -9,7 +9,7 @@ export default function Balance(props) {
                     height:"30px"
                 }}>
                     <div style={{
-                    backgroundColor: "#f00",
+                    backgroundColor: "#48df99",
                     width:`${props.data.usebalance/props.data.cardlimit*100}%`,
                     height:`28px`,
                     transition: "ease 1s"

@@ -33,6 +33,12 @@ function efetuarlogin() {
     .then((result)=>result.json())
     .then((rs)=>{
         console.log(rs);
+        if (rs.token === "" || rs.token == null){
+            return alert("Falha na autenticação");
+        }
+        else {
+            document.getElementsByClassName("login")[0].style.display="none";
+        }
     })
     .catch((err)=>console.error(`erro ao carregar a api ${err}`))
 }
